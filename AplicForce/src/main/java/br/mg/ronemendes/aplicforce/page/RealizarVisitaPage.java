@@ -12,6 +12,7 @@ import br.mg.ronemendes.aplicforce.core.BasePage;
 import br.mg.ronemendes.aplicforce.core.DriverFactory;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
+import net.bytebuddy.implementation.bytecode.Throw;
 
 public class RealizarVisitaPage extends BasePage {
 
@@ -72,17 +73,21 @@ public class RealizarVisitaPage extends BasePage {
 		clicar(By.id("afv.aplic.com.br.dev:id/btnStepTwoSecondAction"));
 	}
 
-//	
-//
-//	public void preencherQtdProdutos() {
-//		escrever(By.id("afv.aplic.com.br.dev:id/txtQuantity"), "1");
-//	}
 
-	public void preencherQtdProdutosTeste() {
+	public boolean existeProduto() {
+		return existeElementoPorTexto("Preço de Venda");
+	}
 
-		if (!DriverFactory.getDriver().findElementsById("afv.aplic.com.br.dev:id/txtQuantity").isEmpty()) {
+
+	public void preencherQtdProdutosTeste() throws Exception{
+
+		boolean result = existeProduto();
+		
+		System.out.println("Result = " + result);
+		
+		if (result == true) {
 			escrever(By.id("afv.aplic.com.br.dev:id/txtQuantity"), "1");
-		} else {
+		}else {
 			clicarPorTexto("FINALIZAR VENDA");
 			Assert.assertEquals("ATENÇÃO! Seu carrinho está vazio. Você precisa clicar em VISITA SEM VENDA para "
 					+ "concluir uma visita deste tipo.", obterTexto());
@@ -149,45 +154,5 @@ public class RealizarVisitaPage extends BasePage {
 		}
 	}
 
-	public String obterTextoProdutoTela(String texto) {
-		return obterTexto(By.xpath("//*[@text='" + texto + "']"));
-	}
-
-	public boolean existsElement() {
-
-		System.out.println("Entrou exists");
-		try {
-			DriverFactory.getDriver().findElement(By.id("afv.aplic.com.br.dev:id/txtQuantity"));
-			
-			System.out.println("Entrou no try");
-		} catch (NoSuchElementException e) {
-			System.out.println("Entrou no catch");
-			return false;
-		}finally {
-			System.out.println("Finally");
-		}
-		return true;
-	}
-
-	public void verificarExistenciaProdutos() {
-		
-//		boolean produto = "";
-		System.out.println(existsElement());
-		
-
-//		if (produto == true) {
-//			escrever(By.id("afv.aplic.com.br.dev:id/txtQuantity"), "1");
-//		} else {
-//			clicarPorTexto("FINALIZAR VENDA");
-//			Assert.assertEquals("ATENÇÃO! Seu carrinho está vazio. Você precisa clicar em VISITA SEM VENDA para "
-//					+ "concluir uma visita deste tipo.", obterTexto());
-//			clicar(By.id("afv.aplic.com.br.dev:id/btnStepTwoSecondAction"));
-//			clicarPorTexto("PDV Fechado (horário)");
-//			clicarPorTexto("CONFIRMAR MOTIVO");
-//			clicar(By.id("afv.aplic.com.br.dev:id/btnStepThreeFirstAction"));
-//
-//			finalizarDriver();
-//		}
-	}
 
 }

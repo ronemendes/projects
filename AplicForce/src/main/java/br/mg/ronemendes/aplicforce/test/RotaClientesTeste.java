@@ -33,8 +33,7 @@ public class RotaClientesTeste {
 		rota.preencherEstoque("1");
 		rota.confirmarContagem();
 		rota.clicarProdutos();
-		rota.verificarExistenciaProdutos();
-		rota.preencherQtdProdutos();
+		rota.preencherQtdProdutosTeste();
 		rota.rastrear();
 		rota.adicionarManual();
 		rota.clicarBotãoAddSerial();		

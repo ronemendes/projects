@@ -3,13 +3,16 @@ package br.mg.ronemendes.aplicforce.core;
 import static br.mg.ronemendes.aplicforce.core.DriverFactory.getDriver;
 //import static br.mg.ronemendes.appium.core.DriverFactory.getDriver;
 
+
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 
 import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 
 public class BasePage {
@@ -80,8 +83,9 @@ public class BasePage {
 		fileInput.sendKeys(path);
 	}
 	
-	public String retornarExistenciaElemento(By by) {
-		return DriverFactory.getDriver().findElement(by).getText();
+	public boolean existeElementoPorTexto(String texto) {
+		List<MobileElement> elementos = getDriver().findElements(By.xpath("//*[@text='"+texto+"']"));
+		return elementos.size() > 0;
 	}
 
 }

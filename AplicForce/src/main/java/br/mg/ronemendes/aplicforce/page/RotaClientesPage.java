@@ -1,5 +1,6 @@
 package br.mg.ronemendes.aplicforce.page;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,6 +12,10 @@ import io.appium.java_client.MobileBy;
 public class RotaClientesPage extends BasePage {
 
 	WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 10);
+
+	public void finalizarDriver() {
+		DriverFactory.killDriver();
+	}
 
 	public void acessarRotaClientes() {
 		clicarPorTexto("Rota / Clientes");
@@ -41,10 +46,6 @@ public class RotaClientesPage extends BasePage {
 
 	public void clicarProdutos() {
 		clicarPorTexto("PRODUTOS");
-	}
-
-	public void preencherQtdProdutos() {
-		escrever(By.id("afv.aplic.com.br.dev:id/txtQuantity"), "1");
 	}
 
 	public void rastrear() {
@@ -117,27 +118,31 @@ public class RotaClientesPage extends BasePage {
 		}
 	}
 
-	public String obterTextoProdutoTela(String texto) {
-		return obterTexto(By.xpath("//*[@text='" + texto + "']"));
+
+	public boolean existeProduto() {
+		return existeElementoPorTexto("Preço de Venda");
 	}
 
-	public void verificarExistenciaProdutos() {
+	public void preencherQtdProdutosTeste() {
 
-		
+		boolean result = existeProduto();
 
-//		if (produto) {
-//			escrever(By.id("afv.aplic.com.br.dev:id/txtQuantity"), "1");
-//		} else {
-//			clicarPorTexto("FINALIZAR VENDA");
-//			Assert.assertEquals("ATENÇÃO! Seu carrinho está vazio. Você precisa clicar em VISITA SEM VENDA para "
-//					+ "concluir uma visita deste tipo.", obterTexto());
-//			clicar(By.id("afv.aplic.com.br.dev:id/btnStepTwoSecondAction"));
-//			clicarPorTexto("PDV Fechado (horário)");
-//			clicarPorTexto("CONFIRMAR MOTIVO");
-//			clicar(By.id("afv.aplic.com.br.dev:id/btnStepThreeFirstAction"));
-//
-//			finalizarDriver();
-//		}
+		System.out.println("Result = " + result);
+
+		if (result == true) {
+			escrever(By.id("afv.aplic.com.br.dev:id/txtQuantity"), "1");
+		} else {
+			clicarPorTexto("FINALIZAR VENDA");
+			Assert.assertEquals("ATENÇÃO! Seu carrinho está vazio. Você precisa clicar em VISITA SEM VENDA para "
+					+ "concluir uma visita deste tipo.", obterTexto());
+			clicar(By.id("afv.aplic.com.br.dev:id/btnStepTwoSecondAction"));
+			clicarPorTexto("PDV Fechado (horário)");
+			clicarPorTexto("CONFIRMAR MOTIVO");
+			clicar(By.id("afv.aplic.com.br.dev:id/btnStepThreeFirstAction"));
+
+			finalizarDriver();
+		}
+
 	}
 
 }

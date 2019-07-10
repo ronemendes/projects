@@ -15,7 +15,7 @@ public class RealizarVisitaTeste extends BaseTest{
 	private RealizarVisitaPage visita = new RealizarVisitaPage();
 	
 	@Test
-	public void iniciarVisita() {
+	public void iniciarVisita() throws Exception {
 		
 		WebDriverWait wait = new WebDriverWait(getDriver(), 10);
 		
@@ -25,8 +25,7 @@ public class RealizarVisitaTeste extends BaseTest{
 		visita.preencherEstoque("1");
 		visita.confirmarContagem();
 		visita.clicarProdutos();
-		//visita.preencherQtdProdutosTeste();
-		visita.verificarExistenciaProdutos();
+		visita.preencherQtdProdutosTeste();
 		visita.rastrear();
 		visita.adicionarManual();
 		visita.clicarBotãoAddSerial();		
