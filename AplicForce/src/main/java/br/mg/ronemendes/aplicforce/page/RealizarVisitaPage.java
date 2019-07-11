@@ -1,3 +1,11 @@
+//***********************************Descrição Geral*******************************************************************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: RealizarVisitaPage.java
+// Descrição: Contém os métodos referente as ações do fluxo de visita ao PDV (Ponto de Venda). 
+//***************************************************************************************************
+
 package br.mg.ronemendes.aplicforce.page;
 
 import java.util.List;

@@ -1,3 +1,11 @@
+//*****************************************Descrição Geral*********************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: DriverFactory.java
+// Descrição: Utilizada centralizar o driver. Padrões Singleton e Factory. 
+//*****************************************************************************************************************************
+
 package br.mg.ronemendes.aplicforce.core;
 
 import java.net.MalformedURLException;
@@ -10,8 +18,6 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-//classe para centralizar o driver. Todo ponto que precisar do driver, eu peço para o driver factory
-//Padrões factory e singleton
 public class DriverFactory {
 
 	private static AndroidDriver<MobileElement> driver;

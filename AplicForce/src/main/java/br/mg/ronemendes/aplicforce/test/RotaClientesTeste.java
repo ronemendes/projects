@@ -1,3 +1,11 @@
+//*************************************************Descrição Geral*******************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: RotaClientesTeste.java
+// Descrição: responsável pelos testes na fluxo de rota de visitas feitas pelo usuário.
+//*******************************************************************************************************************************
+
 package br.mg.ronemendes.aplicforce.test;
 
 import static br.mg.ronemendes.aplicforce.core.DriverFactory.getDriver;

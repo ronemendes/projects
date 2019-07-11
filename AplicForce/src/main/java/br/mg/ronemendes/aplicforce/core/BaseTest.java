@@ -1,3 +1,13 @@
+//*****************************************Descrição Geral**********************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+// App: AplicForce - Aplicativo para realização de cadastro de clientes em geral bem como venda de produtos.
+// Plataforma: Android
+// 
+// Classe: BaseTest.java
+// Descrição: Classe base de teste para as demais classes do sistema. Utilizada para logar/deslogar no sistema, após a execução da bateria de testes. 
+//************************************************************************************************************************
+
 package br.mg.ronemendes.aplicforce.core;
 
 import org.junit.AfterClass;
@@ -32,7 +42,6 @@ public class BaseTest {
 		//clicar botão ACESSAR MINHA CONTA
 		login.clicarPorTexto("ACESSAR MINHA CONTA");
 		login.clicarPorTexto("PERMITIR");
-		System.out.println("Entrou pelo Base Test");
 		
 		esperar(20000);
 		

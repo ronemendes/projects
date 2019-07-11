@@ -1,3 +1,11 @@
+//*************************************************Descrição Geral*******************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: RealizarVisitaTeste.java
+// Descrição: responsável pelos testes no fluxo de realizar visita ao PDV.
+//*******************************************************************************************************************************
+
 package br.mg.ronemendes.aplicforce.test;
 
 import static br.mg.ronemendes.aplicforce.core.DriverFactory.getDriver;

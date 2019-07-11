@@ -1,3 +1,11 @@
+//*************************************************Descrição Geral*******************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: SuiteGeral.java
+// Descrição: Utilizada para execução de todos os testes em uma única bateria.
+//*******************************************************************************************************************************
+
 package br.mg.ronemendes.aplicforce.suites;
 
 import org.junit.AfterClass;

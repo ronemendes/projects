@@ -1,3 +1,12 @@
+//******************************************Descrição Geral**********************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: ArquivosPage.java
+// Descrição: Contém os métodos referente as ações da tela de "Documentação", onde os arquivos são anexados. 
+//*****************************************************************************************************************************
+
+
 package br.mg.ronemendes.aplicforce.page;
 
 import org.openqa.selenium.By;

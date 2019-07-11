@@ -1,3 +1,11 @@
+//*****************************************Descrição Geral***********************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: MenuPage.java
+// Descrição: Contém os métodos referente à interação nos principais menus do app 
+//*************************************************************************************************************************
+
 package br.mg.ronemendes.aplicforce.page;
 
 import org.openqa.selenium.By;

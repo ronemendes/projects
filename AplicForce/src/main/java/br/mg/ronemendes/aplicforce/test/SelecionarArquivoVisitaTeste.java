@@ -1,3 +1,11 @@
+//*************************************************Descrição Geral*******************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: SelecionarArquivoVisitaTeste.java
+// Descrição: responsável pelos testes na tela de anexo de documentos
+//*******************************************************************************************************************************
+
 package br.mg.ronemendes.aplicforce.test;
 
 import org.junit.Test;

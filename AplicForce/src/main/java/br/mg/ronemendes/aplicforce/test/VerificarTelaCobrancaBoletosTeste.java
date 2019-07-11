@@ -1,3 +1,11 @@
+//*************************************************Descrição Geral*******************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: VerificarTelaCobrancaBoletos.java
+// Descrição: valida as informações da tela Cobrança / Boletos
+//*******************************************************************************************************************************
+
 package br.mg.ronemendes.aplicforce.test;
 
 import org.junit.Assert;

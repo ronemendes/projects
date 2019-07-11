@@ -1,0 +1,11 @@
+//******************************************* DESCRIÇÃO DO PROJETO ********************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+// App: AplicForce - Aplicativo para realização de cadastro de clientes em geral bem como venda de produtos.
+// Plataforma: Android
+// Tecnologias utilizadas: 
+// - Appium
+// - Selenium Webdriver
+// - Java
+// - Padrão: Page Object
+//************************************************************************************************************

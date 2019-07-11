@@ -1,3 +1,11 @@
+//*******************************************Descrição Geral**********************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: LoginPage.java
+// Descrição: Contém os métodos referente as ações da tela de "Login", onde os usuários realizam a autenticação no app. 
+//*************************************************************************************************************************
+
 package br.mg.ronemendes.aplicforce.page;
 
 import org.openqa.selenium.By;

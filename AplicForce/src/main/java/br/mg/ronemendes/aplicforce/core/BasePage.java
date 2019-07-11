@@ -1,3 +1,14 @@
+//****************************************Descrição Geral***************************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+// App: AplicForce - Aplicativo para realização de cadastro de clientes em geral bem como venda de produtos.
+// Plataforma: Android
+// 
+// Classe: BasePage.java
+// Descrição: Implementa os métodos genéricos (ações gerais do usuário) utilizado pelas demais classes de todo o projeto.
+//************************************************************************************************************************
+
+
 package br.mg.ronemendes.aplicforce.core;
 
 import static br.mg.ronemendes.aplicforce.core.DriverFactory.getDriver;

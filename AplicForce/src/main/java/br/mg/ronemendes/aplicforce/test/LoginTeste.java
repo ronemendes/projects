@@ -1,3 +1,11 @@
+//*************************************************Descrição Geral*******************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: LoginTeste.java
+// Descrição: responsável pelos testes na tela de login do app.
+//*******************************************************************************************************************************
+
 package br.mg.ronemendes.aplicforce.test;
 
 import org.junit.Test;

@@ -1,3 +1,11 @@
+//*************************************************Descrição Geral*******************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: RotaClientesPage.java
+// Descrição: Contém os métodos referente as ações do fluxo de visita ao PDV(Ponto de Venda) através da rota definida ao vendedor 
+//*******************************************************************************************************************************
+
 package br.mg.ronemendes.aplicforce.page;
 
 import org.junit.Assert;
@@ -21,7 +29,7 @@ public class RotaClientesPage extends BasePage {
 		clicarPorTexto("Rota / Clientes");
 	}
 
-	// clica sempre no primeiro item
+	//clica sempre no primeiro item
 	public void selecionarPDV() {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.className("android.widget.RelativeLayout")));
 		clicar(By.className("android.widget.RelativeLayout"));
