@@ -75,38 +75,37 @@ public class RealizarVisitaPage extends BasePage {
 
 	public void clicarProdutos() {
 		clicarPorTexto("PRODUTOS");
+	
 	}
 
 	public void clicarSemVenda() {
 		clicar(By.id("afv.aplic.com.br.dev:id/btnStepTwoSecondAction"));
 	}
 
-
 	public boolean existeProduto() {
 		return existeElementoPorTexto("Preço de Venda");
 	}
 
+//	public void preencherQtdProdutosTeste() throws Exception {
 
-	public void preencherQtdProdutosTeste() throws Exception{
+//		if (result == true) {
+//			escrever(By.id("afv.aplic.com.br.dev:id/txtQuantity"), "1");
+//		} else {
+//			clicarPorTexto("FINALIZAR VENDA");
+//			Assert.assertEquals("ATENÇÃO! Seu carrinho está vazio. Você precisa clicar em VISITA SEM VENDA para "
+//					+ "concluir uma visita deste tipo.", obterTexto());
+//			clicar(By.id("afv.aplic.com.br.dev:id/btnStepTwoSecondAction"));
+//			clicarPorTexto("PDV Fechado (horário)");
+//			clicarPorTexto("CONFIRMAR MOTIVO");
+//			clicar(By.id("afv.aplic.com.br.dev:id/btnStepThreeFirstAction"));
+//
+//			finalizarDriver();
+//		}
 
-		boolean result = existeProduto();
-		
-		System.out.println("Result = " + result);
-		
-		if (result == true) {
-			escrever(By.id("afv.aplic.com.br.dev:id/txtQuantity"), "1");
-		}else {
-			clicarPorTexto("FINALIZAR VENDA");
-			Assert.assertEquals("ATENÇÃO! Seu carrinho está vazio. Você precisa clicar em VISITA SEM VENDA para "
-					+ "concluir uma visita deste tipo.", obterTexto());
-			clicar(By.id("afv.aplic.com.br.dev:id/btnStepTwoSecondAction"));
-			clicarPorTexto("PDV Fechado (horário)");
-			clicarPorTexto("CONFIRMAR MOTIVO");
-			clicar(By.id("afv.aplic.com.br.dev:id/btnStepThreeFirstAction"));
-
-			finalizarDriver();
-		}
-
+//	}
+	
+	public void preencherQtdProdutos() {
+		escrever(By.id("afv.aplic.com.br.dev:id/txtQuantity"), "1");
 	}
 
 	public void rastrear() {
@@ -154,6 +153,18 @@ public class RealizarVisitaPage extends BasePage {
 		clicarPorTexto("CONFIRMAR MOTIVO");
 	}
 
+	public void clicarVisitaSemVenda() {
+		clicar(By.id("afv.aplic.com.br.dev:id/btnStepTwoSecondAction"));
+	}
+	
+	public void selecionarMotivoVisita() {
+		clicarPorTexto("PDV Fechado (horário)");
+	}
+	
+	public void clicarConfirmarMotivo() {
+		clicarPorTexto("CONFIRMAR MOTIVO");
+	}
+	
 	public void esperar(long tempo) {
 		try {
 			Thread.sleep(tempo);
@@ -161,6 +172,5 @@ public class RealizarVisitaPage extends BasePage {
 			e.printStackTrace();
 		}
 	}
-
 
 }
