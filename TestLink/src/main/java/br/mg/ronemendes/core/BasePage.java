@@ -1,3 +1,14 @@
+//****************************************Descrição Geral***************************************************************************
+// Autor: Rone Mendes
+// Data: 05/2019
+// App: TestLink - Sistema Web responsável pela gestão de Casos e Planos de Teste.
+// Plataforma: Web
+// 
+// Classe: BasePage.java
+// Descrição: Implementa os métodos genéricos (ações gerais e básicas do usuário) utilizado pelas demais classes de todo o projeto.
+//************************************************************************************************************************
+
+
 package br.mg.ronemendes.core;
 
 import org.openqa.selenium.By;

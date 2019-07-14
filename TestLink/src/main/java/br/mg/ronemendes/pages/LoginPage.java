@@ -1,3 +1,12 @@
+//*****************************************Descrição Geral***********************************************************************
+// Autor: Rone Mendes
+// Data: 05/2019
+//
+// Classe: LoginPage.java
+// Descrição: Contém os métodos referente ao login realizado pelo usuário 
+//*************************************************************************************************************************
+
+
 package br.mg.ronemendes.pages;
 
 import org.openqa.selenium.By;

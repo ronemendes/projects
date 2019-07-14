@@ -1,3 +1,12 @@
+//*****************************************Descrição Geral***********************************************************************
+// Autor: Rone Mendes
+// Data: 05/2019
+//
+// Classe: Propriedades.java
+// Descrição: Classe responsável por definir em qual navegador os testes serão realizados. 
+//*************************************************************************************************************************
+
+
 package br.mg.ronemendes.core;
 
 public class Propriedades {

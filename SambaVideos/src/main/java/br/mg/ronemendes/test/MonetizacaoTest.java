@@ -1,3 +1,13 @@
+//*****************************************Descrição Geral***********************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: MonetizacaoTest.java
+// Descrição: Contém os métodos de teste da tela de monetização, responsável por calcular o valor recebido por cada vídeo. 
+//*************************************************************************************************************************
+
+
+
 package br.mg.ronemendes.test;
 
 import org.junit.Test;

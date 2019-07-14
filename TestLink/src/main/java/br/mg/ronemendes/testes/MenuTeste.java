@@ -1,3 +1,12 @@
+//*****************************************Descrição Geral***********************************************************************
+// Autor: Rone Mendes
+// Data: 05/2019
+//
+// Classe: MenuTest.java
+// Descrição: Contém os métodos de teste referente a navegação entre os menus realizada pelo usuário no site. 
+//*************************************************************************************************************************
+
+
 package br.mg.ronemendes.testes;
 
 import org.junit.Test;

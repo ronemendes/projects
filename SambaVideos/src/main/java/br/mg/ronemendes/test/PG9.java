@@ -1,3 +1,6 @@
+//Classe teste de exemplo para envios de arquivos
+
+
 package br.mg.ronemendes.test;
 import org.junit.Test;
 import org.openqa.selenium.*;

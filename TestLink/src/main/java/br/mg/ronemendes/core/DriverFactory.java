@@ -1,3 +1,12 @@
+//*****************************************Descrição Geral*********************************************************************
+// Autor: Rone Mendes
+// Data: 05/2019
+//
+// Classe: DriverFactory.java
+// Descrição: Utilizada centralizar o driver. Padrões Singleton e Factory. 
+//*****************************************************************************************************************************
+
+
 package br.mg.ronemendes.core;
 
 import org.openqa.selenium.Dimension;

@@ -1,3 +1,14 @@
+//*****************************************Descrição Geral**********************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+// App: App: Sambavideos - Página para upload de videos em geral.
+// Plataforma: Web
+// 
+// Classe: BaseTest.java
+// Descrição: Classe base de teste para as demais classes do sistema. Utilizada para logar/deslogar no sistema, após a execução da bateria de testes. 
+//************************************************************************************************************************
+
+
 package br.mg.ronemendes.core;
 
 import static br.mg.ronemendes.core.DriverFactory.killDriver;

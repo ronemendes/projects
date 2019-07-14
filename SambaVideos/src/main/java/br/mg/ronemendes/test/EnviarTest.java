@@ -1,3 +1,12 @@
+//*****************************************Descrição Geral***********************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: EnviarTest.java
+// Descrição: Contém os métodos referente aos envios de vídeos ao site, realizados pelo usuário. 
+//*************************************************************************************************************************
+
+
 package br.mg.ronemendes.test;
 
 import org.junit.Assert;

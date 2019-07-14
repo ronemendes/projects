@@ -1,3 +1,12 @@
+//*****************************************Descrição Geral***********************************************************************
+// Autor: Rone Mendes
+// Data: 05/2019
+//
+// Classe: MenuPage.java
+// Descrição: Contém os métodos base para a classe "MenuTest.java", referente à interação nos principais menus do site. 
+//*************************************************************************************************************************
+
+
 package br.mg.ronemendes.pages;
 
 import br.mg.ronemendes.core.BasePage;

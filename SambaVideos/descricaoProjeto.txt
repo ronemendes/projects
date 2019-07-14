@@ -1,10 +1,9 @@
 //******************************************* DESCRIÇÃO DO PROJETO ********************************************
 // Autor: Rone Mendes
 // Data: 06/2019
-// App: AplicForce - Aplicativo para realização de cadastro de clientes em geral bem como venda de produtos.
-// Plataforma: Android
+// App: Sambavideos - Página para upload de videos em geral.
+// Plataforma: Web
 // Tecnologias utilizadas: 
-// - Appium
 // - Selenium Webdriver
 // - Java
 // - Padrão: Page Object

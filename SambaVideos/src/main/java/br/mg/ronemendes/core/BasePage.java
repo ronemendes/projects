@@ -1,3 +1,13 @@
+//****************************************Descrição Geral***************************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+// App: Sambavideos - Página para upload de videos em geral.
+// Plataforma: Web
+// 
+// Classe: BasePage.java
+// Descrição: Implementa os métodos genéricos (ações gerais do usuário) utilizado pelas demais classes de todo o projeto.
+//************************************************************************************************************************
+
 package br.mg.ronemendes.core;
 
 import static br.mg.ronemendes.core.DriverFactory.getDriver;

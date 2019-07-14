@@ -1,10 +1,9 @@
 //******************************************* DESCRIÇÃO DO PROJETO ********************************************
 // Autor: Rone Mendes
-// Data: 06/2019
-// App: AplicForce - Aplicativo para realização de cadastro de clientes em geral bem como venda de produtos.
-// Plataforma: Android
+// Data: 05/2019
+// App: TestLink - Sistema Web responsável pela gestão de Casos e Planos de Teste.
+// Plataforma: Web
 // Tecnologias utilizadas: 
-// - Appium
 // - Selenium Webdriver
 // - Java
 // - Padrão: Page Object

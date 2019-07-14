@@ -1,3 +1,12 @@
+//*****************************************Descrição Geral***********************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: MonetizacaoPage.java
+// Descrição: Contém os métodos base para a classe "MonetizacaoTest.java". 
+//*************************************************************************************************************************
+
+
 package br.mg.ronemendes.pages;
 
 import org.openqa.selenium.By;

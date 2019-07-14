@@ -1,3 +1,12 @@
+//*****************************************Descrição Geral***********************************************************************
+// Autor: Rone Mendes
+// Data: 06/2019
+//
+// Classe: EnviarPage.java
+// Descrição: Contém os métodos base para a classe "EnviarTest.java", referente aos envios de vídeos ao site, realizados pelo usuário. 
+//*************************************************************************************************************************
+
+
 package br.mg.ronemendes.pages;
 
 import org.openqa.selenium.By;
@@ -17,7 +26,7 @@ public class EnviarPage extends BasePage {
 	}
 	
 	public void clicarUpload() throws InterruptedException {
-//		  
+
 		WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 30);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@type='file']")));
 //		Thread.sleep(3000);
