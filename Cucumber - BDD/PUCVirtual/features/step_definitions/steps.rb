@@ -3,10 +3,10 @@ Dado("que estou na tela de login") do
 end                                                                          
 
 Quando("eu clicar em Acessar") do
-  find(".clearer", id: anchor).find(".input").click
+  find("#loginbtn").click
 end
 
-Então("o sistema deverá me exibir uma mensagem") do
-  pending # Write code here that turns the phrase above into concrete actions
+Então("o sistema deverá me exibir a {string}") do |msg|
+  expect(page).to have_text msg
 end
 

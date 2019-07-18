@@ -6,7 +6,7 @@ Funcionalidade: Autenticação Usuário
 Cenário: Usuário deseja acessar ambiente de aprendizagem da PUC Minas
 	Dado que estou na tela de login
 	Quando eu clicar em Acessar
-	Então o sistema deverá me exibir uma mensagem
+	Então o sistema deverá me exibir a "Nome de usuário ou senha errados. Por favor tente outra vez."
 	
 	
 # Cenário: Página de login deve exibir mensagem de erro em caso de autenticação inválida
