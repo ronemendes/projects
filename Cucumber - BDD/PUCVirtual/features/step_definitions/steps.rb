@@ -1,6 +1,6 @@
-Dado("que eu tenho dados para autenticação cadastrados") do
+Dado("que estou na tela de login") do                                        
   pending # Write code here that turns the phrase above into concrete actions
-end
+end                                                                          
 
 Quando("eu informar {string} e {string} válidos") do |string, string2|
   pending # Write code here that turns the phrase above into concrete actions
