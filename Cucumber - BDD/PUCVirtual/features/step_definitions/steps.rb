@@ -1,23 +1,12 @@
 Dado("que estou na tela de login") do                                        
-  pending # Write code here that turns the phrase above into concrete actions
+  visit 'https://ava.virtual.pucminas.br/login/index.php'
 end                                                                          
 
-Quando("eu informar {string} e {string} válidos") do |string, string2|
+Quando("eu clicar em Acessar") do
+  find(".clearer", id: anchor).find(".input").click
+end
+
+Então("o sistema deverá me exibir uma mensagem") do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Então("o sistema deverá me autenticar") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Então("me direcionar para o ambiente de aprendizagem") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Quando("eu informar {string} e {string} inválidos") do |string, string2|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Então("o sistema deve exibir uma {string} de erro") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
-end
