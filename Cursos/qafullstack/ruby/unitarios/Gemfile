@@ -1,0 +1,6 @@
+
+source "https://rubygems.org"
+
+gem 'rspec' #falando que vou trabalhar com a gem do rspec
+gem 'cucumber'
+gem 'rspec_junit_formatter'

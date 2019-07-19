@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+#definir bibliotecas
+group :test do
+    gem 'cucumber'
+    gem 'rspec'
+end
