@@ -7,8 +7,7 @@ Cenário: Usuário deseja acessar ambiente de aprendizagem da PUC Minas com dado
 	Dado que estou na tela de login
 	Quando eu clicar em Acessar
 	Então o sistema deverá me exibir a mensagem "Nome de usuário ou senha errados. Por favor tente outra vez."
-	
-@temp	
+		
 Cenário: Usuário loga no sistema
 	Dado que estou na tela de login
 	Quando eu informo "L566997" e "1623807"
