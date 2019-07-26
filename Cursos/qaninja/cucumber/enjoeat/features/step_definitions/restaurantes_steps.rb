@@ -17,6 +17,10 @@ Então("devo ver todos os restaurantes dessa lista") do
         expect(restaurants[index]). to have_text value['entrega']
         expect(restaurants[index]). to have_text value['avaliacao']
     end
+	
+	#Esquema do cenário: uso com varios usuarios diferentes, por exemplo cadastro
+	#Data table: um único usuário
+	
 end
 
 
